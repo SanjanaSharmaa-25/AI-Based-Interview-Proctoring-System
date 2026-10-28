@@ -24,7 +24,7 @@ def load_and_preprocess_data(data_dir, classes):
             # Skip corrupt/unreadable files
             if img is None:
                 continue
-            
+
             # Resize to fixed size (safety check, already 48x48 in this dataset)
             img = cv2.resize(img, (IMG_SIZE, IMG_SIZE))
             
