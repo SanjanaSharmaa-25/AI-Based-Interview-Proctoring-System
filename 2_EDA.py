@@ -3,9 +3,8 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-data_dir = r"D:\SUBJECTS\datascience\Projectdata\train"
+data_dir = r"D:\train"
 classes = os.listdir(data_dir)
-
 IMG_SIZE = 48
 
 def load_and_preprocess_data(data_dir, classes):
