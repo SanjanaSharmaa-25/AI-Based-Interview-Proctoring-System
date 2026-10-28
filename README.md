@@ -23,9 +23,80 @@ The goal is **AI-assisted proctoring**, not automated accusation — the system 
 - Display live webcam feed and suspicion alerts on a responsive web dashboard
 
 ##  System Architecture
+Webcam Feed
+↓
+Face Detection (OpenCV)
+↓
+Face Count Check → Multiple faces? / No face?
+↓
+Head Pose Estimation (MediaPipe) → Looking away?
+↓
+Facial Expression (CNN) → Secondary signal
+↓
+Suspicion Scoring Logic
+↓
+Flask Backend (API)
+↓
+HTML/CSS/JS Dashboard → Real-time alerts + activity log
+
+## TECH STACK
+
+| Layer | Technology |
+|---|---|
+| Language | Python 3.10/3.11 |
+| Deep Learning | TensorFlow, Keras |
+| Computer Vision | OpenCV, MediaPipe |
+| Data Handling | NumPy, Pandas |
+| Visualization | Matplotlib, Seaborn |
+| Evaluation | Scikit-learn |
+| Backend | Flask |
+| Frontend | HTML, CSS, JavaScript |
+| Dataset | [FER-2013 (Kaggle)](https://www.kaggle.com/datasets/msambare/fer2013) |
+| Dev Tools | VS Code, Jupyter Notebook, Git/GitHub |
 
 
-## 🚀 Current Progress
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Language | Python 3.10/3.11 |
+| Deep Learning | TensorFlow, Keras |
+| Computer Vision | OpenCV, MediaPipe |
+| Data Handling | NumPy, Pandas |
+| Visualization | Matplotlib, Seaborn |
+| Evaluation | Scikit-learn |
+| Backend | Flask |
+| Frontend | HTML, CSS, JavaScript |
+| Dataset | [FER-2013 (Kaggle)](https://www.kaggle.com/datasets/msambare/fer2013) |
+| Dev Tools | VS Code, Jupyter Notebook, Git/GitHub |
+
+---
+
+##  Project Structure
+
+interview-proctoring-ai/
+│
+├── data/ # Dataset (not uploaded to GitHub — see .gitignore)
+├── notebooks/ # EDA and experimentation notebooks
+├── src/
+│ ├── preprocessing.py # Data loading, preprocessing, train/val/test split
+│ ├── train.py # CNN model building and training
+│ ├── evaluate.py # Model evaluation (accuracy, confusion matrix)
+│ ├── face_detection.py # OpenCV face detection
+│ ├── head_pose.py # MediaPipe head-pose estimation
+│ └── app.py # Flask backend
+│
+├── models/ # Saved trained model (.keras)
+├── static/ , templates/ # Frontend (HTML, CSS, JS)
+├── results/ # Accuracy/loss graphs, confusion matrix
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+
+##  Current Progress
 
 -  Environment setup (Python venv, TensorFlow, OpenCV, MediaPipe)
 -  Dataset acquisition and exploratory data analysis (FER-2013)
