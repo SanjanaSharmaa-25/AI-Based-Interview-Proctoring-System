@@ -12,7 +12,6 @@ Traditional facial expression recognition tells you *what* expression a face sho
 - Candidate looking away from the screen for extended periods
 
 The goal is **AI-assisted proctoring**, not automated accusation — the system flags patterns for a human reviewer, it does not make a final judgment.
-
 ##  Objectives
 
 - Build and train a CNN for facial expression classification using the FER-2013 dataset
