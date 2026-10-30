@@ -160,5 +160,5 @@ python src/app.py
 ##  Author
 
 **Sanjana Sharma**
-Final-year BCA (AI & Data Science), Graphic Era Hill University, Bhimtal
+Final-year BCA (AI & Data Science)
 🔗 [GitHub](https://github.com/sanjanasharmaa09) 
