@@ -4,7 +4,6 @@ An AI-powered system that monitors candidates during online interviews and flags
 
 
 ##  Overview
-
 Traditional facial expression recognition tells you *what* expression a face shows. This project goes further — it uses facial signals as one input among several (face presence, face count, head orientation) to flag potentially suspicious behavior during a live interview, such as:
 
 - No face detected in frame
